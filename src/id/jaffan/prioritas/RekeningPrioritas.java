@@ -6,8 +6,8 @@ public class RekeningPrioritas extends Rekening {
     public RekeningPrioritas(String namaPemilik, double saldoAwal, String kodeCabang) {
         super(namaPemilik, saldoAwal, kodeCabang);
     }
-
-    public void layananPrioritas() {
-        System.out.println("Memberikan layanan prioritas untuk: " + getNamaPemilik());
+    
+    public void adminPrio() {
+        biayaAdmin(); // Memanggil method biayaAdmin() dari kelas Rekening
     }
 }
