@@ -10,10 +10,10 @@ public class Main {
         Rekening rekJap = new Rekening("Jaffan", 1000000, "SLO01");
         rekJap.setor(500000);
 
-        petugasBank petugas = new petugasBank();
+        PetugasBank petugas = new PetugasBank();
         petugas.cekDataRek(rekJap);
 
-        rekeningPrioritas rekPrioritas = new RekeningPrioritas("Dap", 2000000, "JMK02");
+        RekeningPrioritas rekPrioritas = new RekeningPrioritas("Dap", 2000000, "JMK02");
         rekPrioritas.layananPrioritas();
     }
 }
