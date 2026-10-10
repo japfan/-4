@@ -6,14 +6,18 @@ import id.jaffan.prioritas.RekeningPrioritas;
 
 public class Main {
     public static void main(String[] args) {
-        // Membuat objek Rekening
+        // Membuat objek Rekening Jaffan
         Rekening rekJap = new Rekening("Jaffan", 1000000, "SLO01");
-        rekJap.setor(500000);
-
+        
         PetugasBank petugas = new PetugasBank();
         petugas.cekDataRek(rekJap);
+        
+        rekJap.setor(500000);
 
-        RekeningPrioritas rekPrioritas = new RekeningPrioritas("Dap", 2000000, "JMK02");
-        rekPrioritas.layananPrioritas();
+        System.out.println("------------------------------");
+        // Membuat objek Rekening Prioritas Dap
+        RekeningPrioritas rekDap = new RekeningPrioritas("Dap", 2000000, "JMK02");
+        petugas.cekDataRek(rekDap);
+        rekDap.adminPrio();
     }
 }
