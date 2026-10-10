@@ -24,5 +24,11 @@ public class Main {
         rekDap.tarik(1000000);
         rekDap.adminPrio();
         rekDap.adminPrio();
+
+        // Coba ke access modifier yang gak diizinin
+        rekJap.saldo = 9999999; // dia private, jadi cuma bisa diakses di class yang sama (Rekening)
+        rekJap.kodeCabang = "SLO02"; // dia no modifier, jadi bisa diakses di class dan package yang sama
+        rekDap.biayaAdmin(100000); // dia protected, jadi bisa diakses di class yang sama, package yang sama, dan subclass
+        // yang atas tadi kok bisa di Run? ya karena mereka public jadi bisa diakses asalkan ada objeknya.
     }
 }
