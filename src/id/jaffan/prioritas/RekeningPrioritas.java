@@ -3,11 +3,11 @@ import id.jaffan.Rekening;
 
 public class RekeningPrioritas extends Rekening {
 
-    public RekeningPrioritas(String namaPemilik, double saldoAwal, String kodeCabang) {
+    public RekeningPrioritas(String namaPemilik, int saldoAwal, String kodeCabang) {
         super(namaPemilik, saldoAwal, kodeCabang);
     }
     
     public void adminPrio() {
-        biayaAdmin(); // Memanggil method biayaAdmin() dari kelas Rekening
+        biayaAdmin(500000); // Memanggil method biayaAdmin() dari kelas Rekening
     }
 }
