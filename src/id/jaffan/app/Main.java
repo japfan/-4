@@ -13,8 +13,10 @@ public class Main {
         petugas.cekDataRek(rekJap);
         
         rekJap.setor(500000);
+        System.out.println("Saldo terbaru: " + rekJap.getSaldo());
 
         System.out.println("------------------------------");
+        
         // Membuat objek Rekening Prioritas Dap
         RekeningPrioritas rekDap = new RekeningPrioritas("Dap", 2000000, "JMK02");
         petugas.cekDataRek(rekDap);
