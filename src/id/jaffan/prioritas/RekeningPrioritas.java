@@ -7,7 +7,7 @@ public class RekeningPrioritas extends Rekening {
         super(namaPemilik, saldoAwal, kodeCabang);
     }
 
-    public void berikanLayananPrioritas() {
+    public void layananPrioritas() {
         System.out.println("Memberikan layanan prioritas untuk: " + getNamaPemilik());
     }
 }
