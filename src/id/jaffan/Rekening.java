@@ -39,4 +39,10 @@ public class Rekening {
             System.out.println("Jumlah penarikan harus lebih besar dari 0");
         }
     }
+
+    protected void biayaAdmin() {
+        int adminFee = 500000;
+        saldo -= adminFee;
+        System.out.println("Berhasil membayar biaya Rekening Prioritas sebesar " + adminFee + ". Saldo sekarang: " + saldo);
+    }
 }
